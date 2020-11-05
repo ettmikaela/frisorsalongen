@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Frisörerna AB</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <div class="ruta">
+      <div class="intro">
+        <h1>Hej! Klipp dig!</h1>
+        <p>
+          Du är fin som du är men tänk hur fin du hade varit med en
+          <span class="orphan">bra frisyr</span>
+        </p>
+        <div class="intro-actions">
+          <a class="button" href="#boka">Boka tid</a>
+          <a class="link" href="tel:+46733286892"
+            ><span class="orphan">+46 733 286 892</span></a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="ruta">
+      <figure class="placeholder">
+        <img
+          src="https://placeimg.com/640/480/any"
+          alt="Det blir olika bilder varje gång"
+        />
+        <figcaption>En liten bildtext</figcaption>
+      </figure>
+    </div>
+
+    <div class="ruta" id="boka">
+      <a class="phone-number" href="tel:+46733286892"
+        ><span class="orphan">+46 733 286 892</span></a
+      >
+      <!-- allt detta är blaj -->
+
+      <svg xmlns="http://www.w3.org/2000/svg" viewbox="0  0 250 150">
+        <defs>
+          <!-- vara osynlig mellan defsen-->
+
+          <path
+            id="peanut"
+            d="M21.21,62.49C5.59,62.33-4.3,45.75,2.88,31.88c3.79-7.32,8.19-13.87,10.82-16.97
+	c23.88-29.77,59.09-5.67,87.27,3.66c0.72,0.24,1.43,0.5,2.14,0.78c36.22,14.14,98.82-8.62,114.79,30.32
+	c4.81,11.72,3.4,25.07-3.13,35.93c-54.44,90.52-104.48,3.99-153.69-18.39c-6.76-3.08-14.12-4.62-21.55-4.65L21.21,62.49z"
+          >
+            <animatetransform
+              attributename="transform"
+              begin="-10s"
+              dur="10s"
+              type="rotate"
+              from="360 10  10"
+              to="0 20  20"
+              repeatcount="indefinite"
+            />
+          </path>
+        </defs>
+        <text dy="-1" textlength="1220">
+          <animatemotion 
+                         dur="30s" 
+                         repeatcount="indefinite" 
+                         rotate="none">
+            <mpath xlink:href="#peanut" />
+          </animatemotion>
+          <textpath xlink:href="#peanut">
+            tänk en ny frisyr ojooj gu så härligt kort å fräscht
+          </textpath>
+        </text>
+      </svg>
+    </div>
+
+    <!-- allt detta är blaj -->
+  </body>
+</html>

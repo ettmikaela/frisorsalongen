@@ -1,0 +1,108 @@
+/* CSS files add styling rules to your content */
+
+:root {
+  --color-green: #225b04;
+  --color-orange: #ffc127;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  font-size: 100%;
+  background-color: #ffece8;
+  color: #111;
+  margin: 20px; /* här säger vincent att det ska vara padding och margin kommer "bita mig i nacken" */
+}
+h1 {
+  font-weight: bold;
+  font-size: 500%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+figure {
+  display: block;
+  margin-left: auto;
+  max-width: 600px;
+  filter: hue-rotate(100deg);
+}
+
+figcaption {
+  font-size: 80%;
+  text-align: center;
+  padding-top: 5px;
+  color: #666;
+}
+
+.ruta {
+  height: calc(100vh - 20px - 2em);
+  border: solid 1vw var(--color-orange);
+  border-bottom: 0px;
+  padding: 4vw;
+}
+
+.ruta:last-child {
+  border-bottom: solid 10px var(--color-orange);
+}
+
+.intro {
+  padding-top: 10vh; /*den här behöver fixas*/
+}
+
+.intro h1 {
+  font-size: clamp(20px, 12vw, 200px);
+}
+.intro p {
+  font-size: clamp(10px, 6vw, 50px);
+  max-width: 80%;
+}
+
+.intro-actions {
+  margin-top: 10vh;
+}
+
+.intro-actions a {
+  margin-right: 20px;
+  font-size: clamp(10px, 3vw, 30px);
+}
+
+.button {
+  padding: 10px 20px;
+  background: var(--color-green);
+  color: #fff;
+  font-weight: bold;
+  border: dotted var(--color-green) 10px;
+}
+
+.button:hover {
+  background: none;
+  color: var(--color-green);
+}
+
+.link {
+  font-weight: bold;
+}
+.link:hover {
+  border-bottom: solid 5px;
+}
+
+.phone-number {
+  font-size: clamp(40px, 10vw, 20vw);
+}
+
+.orphan {
+  white-space: nowrap; /*horunge*/
+}
